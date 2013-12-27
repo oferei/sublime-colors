@@ -1,8 +1,7 @@
-Sublime Colors
-==============
+# Sublime Colors
 
-Color schemes for Sublime Text.
+Color scheme(s) for Sublime Text.
 
-Brunette:
+## Brunette
 
 ![Brunette](http://oferei.github.io/sublime-colors/Brunette.png)
