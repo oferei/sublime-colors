@@ -1,28 +1,32 @@
-/* This is a very important class.
-   It does something so very profoundly useful.
- */
+import UnityEngine
 
- class Important(Base):
+class MoveAction (Action):
 
-	public inExtraRangeColor as Color = Color(0.8, 0.8, 0.8, 1)
-	public notInRangeColor as Color = Color(0.7, 0.7, 0.7, 1)
+	_path as (Hex) = null
+	path:
+		get:
+			return _path
+		set:
+			_path = value
 
- 	_myProp as string
- 	myProp:
- 		get:
- 			return _myProp
- 		set:
- 			_myProp = value
+	_unit as Unit
+	unit:
+		get:
+			return _unit
+		set:
+			_unit = value
 
- 	def constructor(count as int, names as List[of string]):
- 		if count != len(names):
- 			raise System.Exception("Sorry for the inconvenience")
+	def canMoveUpToHex(hex as Hex, numActionSlots as int):
+		return hex.path.type == Hex.Path.Type.Normal and
+			hex.path.distance <= _unit.moveRange * numActionSlots
 
- 		myProp = "Don't panic"
-
- 	def doSomethingUseful(now as bool):
- 		if now:
- 			Debug.Log("Looking busy")
- 		else:
- 			Debug.Log("Procrastinating")
- 
+	def setHexAppearance(hex as Hex):
+		if hex != _unit.hex:
+			if canMoveUpToHex(hex, 1):
+				hex.setInRangeColor()
+			else:
+				if canMoveUpToHex(hex, 2):
+					hex.setInExtraRangeColor()
+				else:
+					hex.setNotInRangeColor()
+			hex.showEnemyAoi = true
