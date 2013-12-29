@@ -6,7 +6,7 @@ Practical yet pleasant color schemes for Sublime Text.
 
 Install using [Package Control](https://sublime.wbond.net)*: Install _Harmonious Color Schemes_.
 
-* Not working yet. Waiting for Package Control to update lists.
+&#42; Not working yet. Waiting for Package Control to update lists.
 
 ## The Themes
 
