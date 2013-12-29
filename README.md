@@ -1,6 +1,6 @@
-# Sublime Colors
+# Harmonious Color Schemes
 
-Color schemes for Sublime Text.
+Practical yet pleasant color schemes for Sublime Text.
 
 ## Brunette
 
