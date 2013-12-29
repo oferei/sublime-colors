@@ -23,10 +23,13 @@ class MoveAction (Action):
 	def setHexAppearance(hex as Hex):
 		if hex != _unit.hex:
 			if canMoveUpToHex(hex, 1):
+				Debug.Log("Hex is in range")
 				hex.setInRangeColor()
 			else:
 				if canMoveUpToHex(hex, 2):
+					Debug.Log("Hex is in extra range")
 					hex.setInExtraRangeColor()
 				else:
+					Debug.Log("Hex is not in range")
 					hex.setNotInRangeColor()
 			hex.showEnemyAoi = true
