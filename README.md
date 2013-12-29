@@ -8,7 +8,7 @@ Use [Package Control](https://sublime.wbond.net)*: Install _Harmonious Color Sch
 
 &#42; Not working yet. Waiting for Package Control to update lists.
 
-## The Themes
+## The Colors
 
 ### Brunette
 
