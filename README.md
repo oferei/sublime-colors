@@ -17,3 +17,7 @@ Or install manually by copying any .tmTheme file into the _Packages/User_ folder
 ### Abyss
 
 ![Abyss](http://oferei.github.io/sublime-colors/Abyss.png)
+
+### Druid
+
+![Druid](http://oferei.github.io/sublime-colors/Druid.png)
