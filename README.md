@@ -10,6 +10,10 @@ Or install manually by copying any .tmTheme file into the _Packages/User_ folder
 
 ## The Colors
 
+### Druid
+
+![Druid](http://oferei.github.io/sublime-colors/Druid.png)
+
 ### Brunette
 
 ![Brunette](http://oferei.github.io/sublime-colors/Brunette.png)
@@ -17,7 +21,3 @@ Or install manually by copying any .tmTheme file into the _Packages/User_ folder
 ### Abyss
 
 ![Abyss](http://oferei.github.io/sublime-colors/Abyss.png)
-
-### Druid
-
-![Druid](http://oferei.github.io/sublime-colors/Druid.png)
